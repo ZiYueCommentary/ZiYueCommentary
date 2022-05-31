@@ -1,5 +1,5 @@
 ---
-name: 建议
+name: 提议及建议
 about: 如何提交一份能让汉化组理解的建议
 title: ''
 labels: '建议'

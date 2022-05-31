@@ -1,5 +1,5 @@
 ---
-name: 提问
+name: 问题提问
 about: 如何正确地问问题
 title: ''
 labels: '提问'
