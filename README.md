@@ -1,3 +1,14 @@
-乱七八糟，啥啥都有。
+你好，我是子悦。
 
-子悦用于探索Github的仓库，可以随便搞。
+搞翻译的，不喜欢C++，~~Java万岁~~。
+
+*算是*喜欢SCP，大部分翻译都跟SCP有关。
+
+英语不好，精通各种翻译器的使用。
+
+不，我不会写Blitz3D。
+
+~~[子悦汉化组](https://ziyuesinicization.site/)是个谎言。~~
+
+[![](https://github-readme-stats.vercel.app/api?username=ZiYueCommentary&show_icons=true&locale=cn)](https://github.com/anuraghazra/github-readme-stats)
+[![](https://github-readme-stats.vercel.app/api/top-langs/?username=ZiYueCommentary&layout=compact&locale=cn)](https://github.com/anuraghazra/github-readme-stats)
