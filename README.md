@@ -10,5 +10,5 @@
 
 ~~[子悦汉化组](https://ziyuesinicization.site/)是个谎言。~~
 
-| <a href="https://github.com/anuraghazra/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api?username=ZiYueCommentary&show_icons=true&locale=cn"/></a> | <a href="https://github.com/anuraghazra/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ZiYueCommentary&layout=compact&locale=cn" /></a> |
+| <a href="https://github.com/anuraghazra/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api?username=ZiYueCommentary&show_icons=true&locale=cn&hide_border=true"/></a> | <a href="https://github.com/anuraghazra/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ZiYueCommentary&layout=compact&locale=cn&hide_border=true" /></a> |
 | ------------- | ------------- |
