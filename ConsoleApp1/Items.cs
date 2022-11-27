@@ -1,4 +1,6 @@
-﻿namespace SCP.Items
+﻿using SCP.Core;
+
+namespace SCP.Items
 {
     public sealed class ItemList
     {
@@ -7,6 +9,7 @@
         public static readonly Item Origami = new("Origami", "origami");
         public static readonly Document Doc079 = new("Document SCP-079", "doc079");
         public static readonly Document Doc106 = new("Document SCP-106", "doc106");
+        public static readonly Vest Vest = new("Vest", "vest");
     }
 
     public class Item
@@ -35,6 +38,24 @@
         public virtual PlaceHolder GetInventoryImage()
         {
             return new();
+        }
+    }
+
+    public interface IWearable
+    {
+        InteractionResult UseItemOnWearing(Player player, Item item);
+    }
+
+    public class Vest : Item, IWearable
+    {
+        public Vest(string displayName, string id) : base(displayName, id)
+        {
+        }
+
+        public InteractionResult UseItemOnWearing(Player player, Item item)
+        {
+            Client.SendPlayerMessage(player, "You can't use items when you wearing a vest.");
+            return InteractionResult.FAILED;
         }
     }
 

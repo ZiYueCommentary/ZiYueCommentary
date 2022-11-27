@@ -30,6 +30,14 @@ namespace SCP.Core
         }
     }
 
+    public sealed class Client
+    {
+        public static void SendPlayerMessage(Player player, string message)
+        {
+
+        }
+    }
+
     public sealed class Player
     {
         public readonly string Name;
@@ -39,6 +47,7 @@ namespace SCP.Core
         public Item[] Inventory;
         public Item[] QuickInventory = new Item[3];
         public Permission Permission;
+        public IWearable Head = null, Body = null, Leg = null, Feet = null;
 
         public Player() : this("Player", 10) 
         {

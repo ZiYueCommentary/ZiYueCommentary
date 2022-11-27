@@ -1,7 +1,4 @@
 #include <iostream>
-#include <conio.h>
-#include <thread>
-#include <windows.h>
 using namespace std;
 
 namespace ConsoleEngine {
@@ -89,7 +86,7 @@ namespace ConsoleEngine {
 			render(current);
 		}
 
-		void filter(const char* color) { // ÂË¾µ
+		void filter(const std::string& color) { // ÂË¾µ
 			system(("color "s + color).c_str());
 		}
 	};
@@ -125,14 +122,10 @@ namespace ConsoleEngine {
 		uint x, y, length;
 		std::string string;
 
-		Text(uint x, uint y, const char* string) {
-			length = (std::string(string)).length();
-			this->string = string;
-			this->x = x;
-			this->y = y;
+		Text(uint x, uint y, const char* string) : Text(x, y, std::string(string)) {
 		}
 
-		Text(uint x, uint y, std::string string) {
+		Text(uint x, uint y, const std::string& string) {
 			length = string.length();
 			this->string = string;
 			this->x = x;
