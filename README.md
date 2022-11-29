@@ -1,6 +1,6 @@
 Hello, I'm ZiYue, ZiYueCommentary. 👋
 
-I'm a translator, I love C++, C#, and Java.
+I'm a translator who *good at using translators*, I love C++, C#, and Java, ~~though I never learn C#.~~
 
 I'm not good at BlitzBasic... 😕
 
