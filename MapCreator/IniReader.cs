@@ -1,4 +1,7 @@
-﻿using System.Text;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text;
 
 namespace ZiYue.Ini
 {
@@ -9,19 +12,19 @@ namespace ZiYue.Ini
     {
         private IniReader() { }
 
-        protected static Dictionary<string, Dictionary<string, Dictionary<string, string>>> bufferMap = new();
+        protected static Dictionary<string, Dictionary<string, Dictionary<string, string>>> bufferMap = new Dictionary<string, Dictionary<string, Dictionary<string, string>>>();
 
         public static void WriteBuffer(string path)
         {
             try { IniReader.bufferMap.Remove(path); } catch (Exception) { }
-            Dictionary<string, Dictionary<string, string>> bufferMap = new();
-            StreamReader sr = new(path);
-            StringBuilder builder = new();
+            Dictionary<string, Dictionary<string, string>> bufferMap = new Dictionary<string, Dictionary<string, string>>();
+            StreamReader sr = new StreamReader(path);
+            StringBuilder builder = new StringBuilder();
             string line, section = null;
             while ((line = sr.ReadLine()) != null)
             {
                 builder.Append(line);
-                if (builder[0] == '[' & builder[^1] == ']')
+                if (builder[0] == '[' & builder[builder.Length - 1] == ']')
                 {
                     builder.Remove(0, 1).Remove(builder.Length - 1, 1);
                     section = builder.ToString();
@@ -29,13 +32,13 @@ namespace ZiYue.Ini
                 if (line.IndexOf('=') != -1)
                 {
                     if (section == null) continue;
-                    string key = line[..(line.IndexOf('=') - 1)];
+                    string key = line.Substring(0, line.IndexOf('=') - 1);
                     builder.Remove(0, line.IndexOf('=') + 1);
                     if (builder[0] == ' ') builder.Remove(0, 1);
                     string content = builder.ToString();
                     bufferMap[section][key] = content;
                 }
-                builder.Clear();
+                builder.Remove(0, builder.Length);
             }
             IniReader.bufferMap[path] = bufferMap;
         }
@@ -62,13 +65,13 @@ namespace ZiYue.Ini
             {
                 try
                 {
-                    StreamReader sr = new(path);
-                    StringBuilder builder = new();
+                    StreamReader sr = new StreamReader(path);
+                    StringBuilder builder = new StringBuilder();
                     string line, section1 = null;
                     while ((line = sr.ReadLine()) != null)
                     {
                         builder.Append(line);
-                        if (builder[0] == '[' & builder[^1] == ']')
+                        if (builder[0] == '[' & builder[builder.Length - 1] == ']')
                         {
                             builder.Remove(0, 1).Remove(builder.Length - 1, 1);
                             section1 = builder.ToString();
@@ -76,13 +79,13 @@ namespace ZiYue.Ini
                         if (line.IndexOf('=') != -1)
                         {
                             if (section1 == null) continue;
-                            string key1 = line[..(line.IndexOf('=') - 1)];
+                            string key1 = line.Substring(0, line.IndexOf('=') - 1);
                             builder.Remove(0, line.IndexOf('=') + 1);
                             if (builder[0] == ' ') builder.Remove(0, 1);
                             string content = builder.ToString();
                             if (key.Equals(key1) && section.Equals(section1)) return content;
                         }
-                        builder.Clear();
+                        builder.Remove(0, builder.Length);
                     }
                 }
                 catch (Exception)

@@ -10,6 +10,7 @@ namespace SCP.Command
             if (command == "") return;
             try
             {
+                Func<>
                 List<string> strings = new(ZiYue.CommandParser.Parse(command));
                 Command command1 = CommandList.Commands[strings[0]];
                 strings.RemoveAt(0);
