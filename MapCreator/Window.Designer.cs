@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Window));
+            this.ToolStripContainerMain = new System.Windows.Forms.ToolStripContainer();
             this.StatusStrip = new System.Windows.Forms.StatusStrip();
             this.StatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.MenuStrip = new System.Windows.Forms.MenuStrip();
@@ -45,17 +46,32 @@
             this.MenuOptionsPlaceDoors = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuOptionsSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.MenuOptionsMapSettings = new System.Windows.Forms.ToolStripMenuItem();
-            this.MenuOptionsMapInformations = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuOptionsMapInformation = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuOptionsSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.MenuOptionsCameraSettings = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuTools = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuToolsMapGenerator = new System.Windows.Forms.ToolStripMenuItem();
+            this.informationTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuHelpManual = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuHelpAbout = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripContainerMain.SuspendLayout();
             this.StatusStrip.SuspendLayout();
             this.MenuStrip.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // ToolStripContainerMain
+            // 
+            this.ToolStripContainerMain.BottomToolStripPanelVisible = false;
+            // 
+            // ToolStripContainerMain.ContentPanel
+            // 
+            resources.ApplyResources(this.ToolStripContainerMain.ContentPanel, "ToolStripContainerMain.ContentPanel");
+            resources.ApplyResources(this.ToolStripContainerMain, "ToolStripContainerMain");
+            this.ToolStripContainerMain.LeftToolStripPanelVisible = false;
+            this.ToolStripContainerMain.Name = "ToolStripContainerMain";
+            this.ToolStripContainerMain.RightToolStripPanelVisible = false;
+            this.ToolStripContainerMain.TopToolStripPanelVisible = false;
             // 
             // StatusStrip
             // 
@@ -96,6 +112,7 @@
             // 
             this.MenuFileNew.Name = "MenuFileNew";
             resources.ApplyResources(this.MenuFileNew, "MenuFileNew");
+            this.MenuFileNew.Click += new System.EventHandler(this.EventMenuFileNewClick);
             this.MenuFileNew.MouseEnter += new System.EventHandler(this.EventMenuFileNewMouseEnter);
             this.MenuFileNew.MouseLeave += new System.EventHandler(this.EventMenuButtonsMouseLeave);
             // 
@@ -145,7 +162,7 @@
             this.MenuOptionsPlaceDoors,
             this.MenuOptionsSeparator1,
             this.MenuOptionsMapSettings,
-            this.MenuOptionsMapInformations,
+            this.MenuOptionsMapInformation,
             this.MenuOptionsSeparator2,
             this.MenuOptionsCameraSettings});
             this.MenuOptions.Name = "MenuOptions";
@@ -153,17 +170,17 @@
             // 
             // MenuOptionsDefaultEvents
             // 
+            this.MenuOptionsDefaultEvents.CheckOnClick = true;
             this.MenuOptionsDefaultEvents.Name = "MenuOptionsDefaultEvents";
             resources.ApplyResources(this.MenuOptionsDefaultEvents, "MenuOptionsDefaultEvents");
-            this.MenuOptionsDefaultEvents.Click += new System.EventHandler(this.EventMenuOptionsDefaultEventsClick);
             this.MenuOptionsDefaultEvents.MouseEnter += new System.EventHandler(this.EventMenuOptionsDefaultEventsMouseEnter);
             this.MenuOptionsDefaultEvents.MouseLeave += new System.EventHandler(this.EventMenuButtonsMouseLeave);
             // 
             // MenuOptionsPlaceDoors
             // 
+            this.MenuOptionsPlaceDoors.CheckOnClick = true;
             this.MenuOptionsPlaceDoors.Name = "MenuOptionsPlaceDoors";
             resources.ApplyResources(this.MenuOptionsPlaceDoors, "MenuOptionsPlaceDoors");
-            this.MenuOptionsPlaceDoors.Click += new System.EventHandler(this.EventMenuOptionsPlaceDoorsClick);
             this.MenuOptionsPlaceDoors.MouseEnter += new System.EventHandler(this.EventMenuOptionsPlaceDoorsMouseEnter);
             this.MenuOptionsPlaceDoors.MouseLeave += new System.EventHandler(this.EventMenuButtonsMouseLeave);
             // 
@@ -176,15 +193,15 @@
             // 
             this.MenuOptionsMapSettings.Name = "MenuOptionsMapSettings";
             resources.ApplyResources(this.MenuOptionsMapSettings, "MenuOptionsMapSettings");
-            this.MenuOptionsMapSettings.MouseEnter += new System.EventHandler(this.EventMenuButtonsMouseEnter);
+            this.MenuOptionsMapSettings.MouseEnter += new System.EventHandler(this.EventMenuOptionsMapSettingsMouseEnter);
             this.MenuOptionsMapSettings.MouseLeave += new System.EventHandler(this.EventMenuButtonsMouseLeave);
             // 
-            // MenuOptionsMapInformations
+            // MenuOptionsMapInformation
             // 
-            this.MenuOptionsMapInformations.Name = "MenuOptionsMapInformations";
-            resources.ApplyResources(this.MenuOptionsMapInformations, "MenuOptionsMapInformations");
-            this.MenuOptionsMapInformations.MouseEnter += new System.EventHandler(this.EventMenuButtonsMouseEnter);
-            this.MenuOptionsMapInformations.MouseLeave += new System.EventHandler(this.EventMenuButtonsMouseLeave);
+            this.MenuOptionsMapInformation.Name = "MenuOptionsMapInformation";
+            resources.ApplyResources(this.MenuOptionsMapInformation, "MenuOptionsMapInformation");
+            this.MenuOptionsMapInformation.MouseEnter += new System.EventHandler(this.EventMenuOptionsMapInformationMouseEnter);
+            this.MenuOptionsMapInformation.MouseLeave += new System.EventHandler(this.EventMenuButtonsMouseLeave);
             // 
             // MenuOptionsSeparator2
             // 
@@ -200,7 +217,8 @@
             // MenuTools
             // 
             this.MenuTools.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MenuToolsMapGenerator});
+            this.MenuToolsMapGenerator,
+            this.informationTemplateToolStripMenuItem});
             this.MenuTools.Name = "MenuTools";
             resources.ApplyResources(this.MenuTools, "MenuTools");
             // 
@@ -208,6 +226,11 @@
             // 
             this.MenuToolsMapGenerator.Name = "MenuToolsMapGenerator";
             resources.ApplyResources(this.MenuToolsMapGenerator, "MenuToolsMapGenerator");
+            // 
+            // informationTemplateToolStripMenuItem
+            // 
+            this.informationTemplateToolStripMenuItem.Name = "informationTemplateToolStripMenuItem";
+            resources.ApplyResources(this.informationTemplateToolStripMenuItem, "informationTemplateToolStripMenuItem");
             // 
             // MenuHelp
             // 
@@ -233,12 +256,15 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.ToolStripContainerMain);
             this.Controls.Add(this.StatusStrip);
             this.Controls.Add(this.MenuStrip);
             this.MainMenuStrip = this.MenuStrip;
             this.Name = "Window";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EventWindowClosing);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.EventWindowKeyDown);
+            this.ToolStripContainerMain.ResumeLayout(false);
+            this.ToolStripContainerMain.PerformLayout();
             this.StatusStrip.ResumeLayout(false);
             this.StatusStrip.PerformLayout();
             this.MenuStrip.ResumeLayout(false);
@@ -270,9 +296,11 @@
         public System.Windows.Forms.ToolStripMenuItem MenuOptionsDefaultEvents;
         public System.Windows.Forms.ToolStripMenuItem MenuOptionsPlaceDoors;
         public System.Windows.Forms.ToolStripMenuItem MenuOptionsMapSettings;
-        public System.Windows.Forms.ToolStripMenuItem MenuOptionsMapInformations;
+        public System.Windows.Forms.ToolStripMenuItem MenuOptionsMapInformation;
         public System.Windows.Forms.ToolStripSeparator MenuOptionsSeparator1;
         public System.Windows.Forms.ToolStripSeparator MenuOptionsSeparator2;
         public System.Windows.Forms.ToolStripMenuItem MenuOptionsCameraSettings;
+        private System.Windows.Forms.ToolStripContainer ToolStripContainerMain;
+        private System.Windows.Forms.ToolStripMenuItem informationTemplateToolStripMenuItem;
     }
 }

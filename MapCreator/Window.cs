@@ -2,7 +2,6 @@
 using System;
 using System.Diagnostics;
 using System.Windows.Forms;
-using static System.Runtime.CompilerServices.RuntimeHelpers;
 
 namespace MapCreator
 {
@@ -45,8 +44,7 @@ namespace MapCreator
                     EventMenuFileQuitClick(sender, e);
                     break;
                 case Keys.N:
-                    if (e.Modifiers.CompareTo(Keys.Control) == 0)
-                        MessageBox.Show("wiow");
+                    if (e.Modifiers.CompareTo(Keys.Control) == 0) EventMenuFileNewClick(sender, e);
                     break;
             }
         }
@@ -56,6 +54,7 @@ namespace MapCreator
             DialogResult result = MessageBox.Show("Are you sure want to quit?", "Quit?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
+                Settings.SettingsSaving();
                 Environment.Exit(0);
             }
             if (e is FormClosingEventArgs window) 
@@ -94,18 +93,6 @@ namespace MapCreator
             Program.instance.StatusLabel.Text = "Close the Map Creator.";
         }
 
-        private void EventMenuOptionsDefaultEventsClick(object sender, EventArgs e)
-        {
-            Program.instance.MenuOptionsDefaultEvents.Checked = !Program.instance.MenuOptionsDefaultEvents.Checked;
-            Settings.Default.DefaultEvents = Program.instance.MenuOptionsDefaultEvents.Checked;
-        }
-
-        private void EventMenuOptionsPlaceDoorsClick(object sender, EventArgs e)
-        {
-            Program.instance.MenuOptionsPlaceDoors.Checked = !Program.instance.MenuOptionsPlaceDoors.Checked;
-            Settings.Default.PlaceDoors = Program.instance.MenuOptionsPlaceDoors.Checked;
-        }
-
         private void EventWindowClosing(object sender, FormClosingEventArgs e)
         {
             EventMenuFileQuitClick(sender, e);
@@ -121,9 +108,18 @@ namespace MapCreator
             Program.instance.StatusLabel.Text = "Place adjacent doors in 3D view.";
         }
 
-        private void EventMenuButtonsMouseEnter(object sender, EventArgs e)
+        private void EventMenuOptionsMapInformationMouseEnter(object sender, EventArgs e)
         {
             Program.instance.StatusLabel.Text = "Edit Author and Description for the map.";
+        }
+
+        private void EventMenuOptionsMapSettingsMouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EventMenuFileNewClick(object sender, EventArgs e)
+        {
         }
     }
 }

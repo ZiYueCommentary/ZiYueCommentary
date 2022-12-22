@@ -23,7 +23,6 @@ namespace MapCreator
         static void Main()
         {
             Application.Run(instance);
-            Settings.SettingsSaving();
         }
     }
 }

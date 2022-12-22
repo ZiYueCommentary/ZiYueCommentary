@@ -1,4 +1,7 @@
-﻿namespace MapCreator.Properties 
+﻿using System.Collections.Generic;
+using System.Configuration;
+
+namespace MapCreator.Properties 
 {
     public sealed partial class Settings 
     {

@@ -117,24 +117,114 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;ToolStripContainerMain.BottomToolStripPanel.Name" xml:space="preserve">
+    <value>ToolStripContainerMain.BottomToolStripPanel</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainerMain.BottomToolStripPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainerMain.BottomToolStripPanel.Parent" xml:space="preserve">
+    <value>ToolStripContainerMain</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainerMain.BottomToolStripPanel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ToolStripContainerMain.ContentPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>894, 575</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainerMain.ContentPanel.Name" xml:space="preserve">
+    <value>ToolStripContainerMain.ContentPanel</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainerMain.ContentPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripContentPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainerMain.ContentPanel.Parent" xml:space="preserve">
+    <value>ToolStripContainerMain</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainerMain.ContentPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ToolStripContainerMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainerMain.LeftToolStripPanel.Name" xml:space="preserve">
+    <value>ToolStripContainerMain.LeftToolStripPanel</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainerMain.LeftToolStripPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainerMain.LeftToolStripPanel.Parent" xml:space="preserve">
+    <value>ToolStripContainerMain</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainerMain.LeftToolStripPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ToolStripContainerMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 24</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainerMain.RightToolStripPanel.Name" xml:space="preserve">
+    <value>ToolStripContainerMain.RightToolStripPanel</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainerMain.RightToolStripPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainerMain.RightToolStripPanel.Parent" xml:space="preserve">
+    <value>ToolStripContainerMain</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainerMain.RightToolStripPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ToolStripContainerMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>894, 575</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ToolStripContainerMain.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="ToolStripContainerMain.Text" xml:space="preserve">
+    <value>ToolStripContainerMain</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainerMain.TopToolStripPanel.Name" xml:space="preserve">
+    <value>ToolStripContainerMain.TopToolStripPanel</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainerMain.TopToolStripPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainerMain.TopToolStripPanel.Parent" xml:space="preserve">
+    <value>ToolStripContainerMain</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainerMain.TopToolStripPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainerMain.Name" xml:space="preserve">
+    <value>ToolStripContainerMain</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainerMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripContainer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainerMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ToolStripContainerMain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="StatusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="StatusLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>0, 17</value>
   </data>
   <data name="StatusStrip.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 491</value>
+    <value>0, 599</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="StatusStrip.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 0, 12, 0</value>
   </data>
   <data name="StatusStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>799, 22</value>
+    <value>894, 22</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="StatusStrip.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -151,16 +241,103 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;StatusStrip.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="MenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>133, 17</value>
   </metadata>
+  <data name="MenuFileNew.ShortcutKeyDisplayString" xml:space="preserve">
+    <value>Ctrl+N</value>
+  </data>
+  <data name="MenuFileNew.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 22</value>
+  </data>
+  <data name="MenuFileNew.Text" xml:space="preserve">
+    <value>&amp;New</value>
+  </data>
+  <data name="MenuFileOpen.ShortcutKeyDisplayString" xml:space="preserve">
+    <value>Ctrl+O</value>
+  </data>
+  <data name="MenuFileOpen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 22</value>
+  </data>
+  <data name="MenuFileOpen.Text" xml:space="preserve">
+    <value>&amp;Open</value>
+  </data>
+  <data name="MenuFileSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 6</value>
+  </data>
+  <data name="MenuFileSave.ShortcutKeyDisplayString" xml:space="preserve">
+    <value>Ctrl+S</value>
+  </data>
+  <data name="MenuFileSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 22</value>
+  </data>
+  <data name="MenuFileSave.Text" xml:space="preserve">
+    <value>&amp;Save</value>
+  </data>
+  <data name="MenuFileSaveAs.ShortcutKeyDisplayString" xml:space="preserve">
+    <value>Shift+S</value>
+  </data>
+  <data name="MenuFileSaveAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 22</value>
+  </data>
+  <data name="MenuFileSaveAs.Text" xml:space="preserve">
+    <value>Save &amp;as...</value>
+  </data>
+  <data name="MenuFileSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 6</value>
+  </data>
+  <data name="MenuFileQuit.ShortcutKeyDisplayString" xml:space="preserve">
+    <value>Esc</value>
+  </data>
+  <data name="MenuFileQuit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 22</value>
+  </data>
+  <data name="MenuFileQuit.Text" xml:space="preserve">
+    <value>&amp;Quit</value>
+  </data>
   <data name="MenuFile.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 22</value>
   </data>
   <data name="MenuFile.Text" xml:space="preserve">
     <value>&amp;File</value>
+  </data>
+  <data name="MenuOptionsDefaultEvents.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 22</value>
+  </data>
+  <data name="MenuOptionsDefaultEvents.Text" xml:space="preserve">
+    <value>&amp;Default Events</value>
+  </data>
+  <data name="MenuOptionsPlaceDoors.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 22</value>
+  </data>
+  <data name="MenuOptionsPlaceDoors.Text" xml:space="preserve">
+    <value>&amp;Place Doors</value>
+  </data>
+  <data name="MenuOptionsSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 6</value>
+  </data>
+  <data name="MenuOptionsMapSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 22</value>
+  </data>
+  <data name="MenuOptionsMapSettings.Text" xml:space="preserve">
+    <value>Map &amp;Settings</value>
+  </data>
+  <data name="MenuOptionsMapInformation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 22</value>
+  </data>
+  <data name="MenuOptionsMapInformation.Text" xml:space="preserve">
+    <value>Map &amp;Information</value>
+  </data>
+  <data name="MenuOptionsSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 6</value>
+  </data>
+  <data name="MenuOptionsCameraSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 22</value>
+  </data>
+  <data name="MenuOptionsCameraSettings.Text" xml:space="preserve">
+    <value>&amp;Camera Settings</value>
   </data>
   <data name="MenuOptions.Size" type="System.Drawing.Size, System.Drawing">
     <value>66, 22</value>
@@ -168,11 +345,41 @@
   <data name="MenuOptions.Text" xml:space="preserve">
     <value>&amp;Options</value>
   </data>
+  <data name="MenuToolsMapGenerator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 22</value>
+  </data>
+  <data name="MenuToolsMapGenerator.Text" xml:space="preserve">
+    <value>&amp;Map Generator</value>
+  </data>
+  <data name="informationTemplateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 22</value>
+  </data>
+  <data name="informationTemplateToolStripMenuItem.Text" xml:space="preserve">
+    <value>Information Template</value>
+  </data>
   <data name="MenuTools.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 22</value>
   </data>
   <data name="MenuTools.Text" xml:space="preserve">
     <value>&amp;Tools</value>
+  </data>
+  <data name="MenuHelpManual.ShortcutKeyDisplayString" xml:space="preserve">
+    <value>F1</value>
+  </data>
+  <data name="MenuHelpManual.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 22</value>
+  </data>
+  <data name="MenuHelpManual.Text" xml:space="preserve">
+    <value>&amp;Manual</value>
+  </data>
+  <data name="MenuHelpAbout.ShortcutKeyDisplayString" xml:space="preserve">
+    <value>F2</value>
+  </data>
+  <data name="MenuHelpAbout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 22</value>
+  </data>
+  <data name="MenuHelpAbout.Text" xml:space="preserve">
+    <value>&amp;About</value>
   </data>
   <data name="MenuHelp.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 22</value>
@@ -187,7 +394,7 @@
     <value>5, 1, 0, 1</value>
   </data>
   <data name="MenuStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>799, 24</value>
+    <value>894, 24</value>
   </data>
   <data name="MenuStrip.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -205,118 +412,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MenuStrip.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="MenuFileNew.ShortcutKeyDisplayString" xml:space="preserve">
-    <value>Ctrl+N</value>
-  </data>
-  <data name="MenuFileNew.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="MenuFileNew.Text" xml:space="preserve">
-    <value>&amp;New</value>
-  </data>
-  <data name="MenuFileOpen.ShortcutKeyDisplayString" xml:space="preserve">
-    <value>Ctrl+O</value>
-  </data>
-  <data name="MenuFileOpen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="MenuFileOpen.Text" xml:space="preserve">
-    <value>&amp;Open</value>
-  </data>
-  <data name="MenuFileSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 6</value>
-  </data>
-  <data name="MenuFileSave.ShortcutKeyDisplayString" xml:space="preserve">
-    <value>Ctrl+S</value>
-  </data>
-  <data name="MenuFileSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="MenuFileSave.Text" xml:space="preserve">
-    <value>&amp;Save</value>
-  </data>
-  <data name="MenuFileSaveAs.ShortcutKeyDisplayString" xml:space="preserve">
-    <value>Shift+S</value>
-  </data>
-  <data name="MenuFileSaveAs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="MenuFileSaveAs.Text" xml:space="preserve">
-    <value>Save &amp;as...</value>
-  </data>
-  <data name="MenuFileSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 6</value>
-  </data>
-  <data name="MenuFileQuit.ShortcutKeyDisplayString" xml:space="preserve">
-    <value>Esc</value>
-  </data>
-  <data name="MenuFileQuit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="MenuFileQuit.Text" xml:space="preserve">
-    <value>&amp;Quit</value>
-  </data>
-  <data name="MenuOptionsDefaultEvents.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 22</value>
-  </data>
-  <data name="MenuOptionsDefaultEvents.Text" xml:space="preserve">
-    <value>&amp;Default Events</value>
-  </data>
-  <data name="MenuOptionsPlaceDoors.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 22</value>
-  </data>
-  <data name="MenuOptionsPlaceDoors.Text" xml:space="preserve">
-    <value>&amp;Place Doors</value>
-  </data>
-  <data name="MenuOptionsSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 6</value>
-  </data>
-  <data name="MenuOptionsMapSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 22</value>
-  </data>
-  <data name="MenuOptionsMapSettings.Text" xml:space="preserve">
-    <value>Map &amp;Settings</value>
-  </data>
-  <data name="MenuOptionsMapInformations.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 22</value>
-  </data>
-  <data name="MenuOptionsMapInformations.Text" xml:space="preserve">
-    <value>Map &amp;Informations</value>
-  </data>
-  <data name="MenuOptionsSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 6</value>
-  </data>
-  <data name="MenuOptionsCameraSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 22</value>
-  </data>
-  <data name="MenuOptionsCameraSettings.Text" xml:space="preserve">
-    <value>&amp;Camera Settings</value>
-  </data>
-  <data name="MenuToolsMapGenerator.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="MenuToolsMapGenerator.Text" xml:space="preserve">
-    <value>&amp;Map Generator</value>
-  </data>
-  <data name="MenuHelpManual.ShortcutKeyDisplayString" xml:space="preserve">
-    <value>F1</value>
-  </data>
-  <data name="MenuHelpManual.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="MenuHelpManual.Text" xml:space="preserve">
-    <value>&amp;Manual</value>
-  </data>
-  <data name="MenuHelpAbout.ShortcutKeyDisplayString" xml:space="preserve">
-    <value>F2</value>
-  </data>
-  <data name="MenuHelpAbout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="MenuHelpAbout.Text" xml:space="preserve">
-    <value>&amp;About</value>
+    <value>2</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -325,7 +421,7 @@
     <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>799, 513</value>
+    <value>894, 621</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -955,10 +1051,10 @@
   <data name="&gt;&gt;MenuOptionsMapSettings.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;MenuOptionsMapInformations.Name" xml:space="preserve">
-    <value>MenuOptionsMapInformations</value>
+  <data name="&gt;&gt;MenuOptionsMapInformation.Name" xml:space="preserve">
+    <value>MenuOptionsMapInformation</value>
   </data>
-  <data name="&gt;&gt;MenuOptionsMapInformations.Type" xml:space="preserve">
+  <data name="&gt;&gt;MenuOptionsMapInformation.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;MenuOptionsSeparator2.Name" xml:space="preserve">
@@ -983,6 +1079,12 @@
     <value>MenuToolsMapGenerator</value>
   </data>
   <data name="&gt;&gt;MenuToolsMapGenerator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;informationTemplateToolStripMenuItem.Name" xml:space="preserve">
+    <value>informationTemplateToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;informationTemplateToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;MenuHelp.Name" xml:space="preserve">
