@@ -129,7 +129,60 @@
   <data name="&gt;&gt;ToolStripContainerMain.BottomToolStripPanel.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="splitContainer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="splitContainer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Name" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Parent" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Name" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Parent" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitContainer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>894, 575</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="splitContainer1.SplitterDistance" type="System.Int32, mscorlib">
+    <value>298</value>
+  </data>
+  <data name="splitContainer1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Name" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Parent" xml:space="preserve">
+    <value>ToolStripContainerMain.ContentPanel</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="ToolStripContainerMain.ContentPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>894, 575</value>
   </data>
@@ -145,7 +198,6 @@
   <data name="&gt;&gt;ToolStripContainerMain.ContentPanel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ToolStripContainerMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -179,7 +231,6 @@
   <data name="ToolStripContainerMain.Size" type="System.Drawing.Size, System.Drawing">
     <value>894, 575</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ToolStripContainerMain.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
@@ -351,10 +402,10 @@
   <data name="MenuToolsMapGenerator.Text" xml:space="preserve">
     <value>&amp;Map Generator</value>
   </data>
-  <data name="informationTemplateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="MenuToolsInformationTemplate.Size" type="System.Drawing.Size, System.Drawing">
     <value>202, 22</value>
   </data>
-  <data name="informationTemplateToolStripMenuItem.Text" xml:space="preserve">
+  <data name="MenuToolsInformationTemplate.Text" xml:space="preserve">
     <value>Information Template</value>
   </data>
   <data name="MenuTools.Size" type="System.Drawing.Size, System.Drawing">
@@ -1081,10 +1132,10 @@
   <data name="&gt;&gt;MenuToolsMapGenerator.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;informationTemplateToolStripMenuItem.Name" xml:space="preserve">
-    <value>informationTemplateToolStripMenuItem</value>
+  <data name="&gt;&gt;MenuToolsInformationTemplate.Name" xml:space="preserve">
+    <value>MenuToolsInformationTemplate</value>
   </data>
-  <data name="&gt;&gt;informationTemplateToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;MenuToolsInformationTemplate.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;MenuHelp.Name" xml:space="preserve">

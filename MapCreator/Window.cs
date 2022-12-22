@@ -115,7 +115,7 @@ namespace MapCreator
 
         private void EventMenuOptionsMapSettingsMouseEnter(object sender, EventArgs e)
         {
-
+            Program.instance.StatusLabel.Text = "Edit Zone Transition for the map.";
         }
 
         private void EventMenuFileNewClick(object sender, EventArgs e)

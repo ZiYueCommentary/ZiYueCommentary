@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Window));
             this.ToolStripContainerMain = new System.Windows.Forms.ToolStripContainer();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.StatusStrip = new System.Windows.Forms.StatusStrip();
             this.StatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.MenuStrip = new System.Windows.Forms.MenuStrip();
@@ -51,11 +52,13 @@
             this.MenuOptionsCameraSettings = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuTools = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuToolsMapGenerator = new System.Windows.Forms.ToolStripMenuItem();
-            this.informationTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuToolsInformationTemplate = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuHelpManual = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuHelpAbout = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripContainerMain.ContentPanel.SuspendLayout();
             this.ToolStripContainerMain.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             this.StatusStrip.SuspendLayout();
             this.MenuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -66,12 +69,18 @@
             // 
             // ToolStripContainerMain.ContentPanel
             // 
+            this.ToolStripContainerMain.ContentPanel.Controls.Add(this.splitContainer1);
             resources.ApplyResources(this.ToolStripContainerMain.ContentPanel, "ToolStripContainerMain.ContentPanel");
             resources.ApplyResources(this.ToolStripContainerMain, "ToolStripContainerMain");
             this.ToolStripContainerMain.LeftToolStripPanelVisible = false;
             this.ToolStripContainerMain.Name = "ToolStripContainerMain";
             this.ToolStripContainerMain.RightToolStripPanelVisible = false;
             this.ToolStripContainerMain.TopToolStripPanelVisible = false;
+            // 
+            // splitContainer1
+            // 
+            resources.ApplyResources(this.splitContainer1, "splitContainer1");
+            this.splitContainer1.Name = "splitContainer1";
             // 
             // StatusStrip
             // 
@@ -218,7 +227,7 @@
             // 
             this.MenuTools.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MenuToolsMapGenerator,
-            this.informationTemplateToolStripMenuItem});
+            this.MenuToolsInformationTemplate});
             this.MenuTools.Name = "MenuTools";
             resources.ApplyResources(this.MenuTools, "MenuTools");
             // 
@@ -227,10 +236,10 @@
             this.MenuToolsMapGenerator.Name = "MenuToolsMapGenerator";
             resources.ApplyResources(this.MenuToolsMapGenerator, "MenuToolsMapGenerator");
             // 
-            // informationTemplateToolStripMenuItem
+            // MenuToolsInformationTemplate
             // 
-            this.informationTemplateToolStripMenuItem.Name = "informationTemplateToolStripMenuItem";
-            resources.ApplyResources(this.informationTemplateToolStripMenuItem, "informationTemplateToolStripMenuItem");
+            this.MenuToolsInformationTemplate.Name = "MenuToolsInformationTemplate";
+            resources.ApplyResources(this.MenuToolsInformationTemplate, "MenuToolsInformationTemplate");
             // 
             // MenuHelp
             // 
@@ -263,8 +272,10 @@
             this.Name = "Window";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EventWindowClosing);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.EventWindowKeyDown);
+            this.ToolStripContainerMain.ContentPanel.ResumeLayout(false);
             this.ToolStripContainerMain.ResumeLayout(false);
             this.ToolStripContainerMain.PerformLayout();
+            this.splitContainer1.ResumeLayout(false);
             this.StatusStrip.ResumeLayout(false);
             this.StatusStrip.PerformLayout();
             this.MenuStrip.ResumeLayout(false);
@@ -301,6 +312,7 @@
         public System.Windows.Forms.ToolStripSeparator MenuOptionsSeparator2;
         public System.Windows.Forms.ToolStripMenuItem MenuOptionsCameraSettings;
         private System.Windows.Forms.ToolStripContainer ToolStripContainerMain;
-        private System.Windows.Forms.ToolStripMenuItem informationTemplateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MenuToolsInformationTemplate;
+        private System.Windows.Forms.SplitContainer splitContainer1;
     }
 }
