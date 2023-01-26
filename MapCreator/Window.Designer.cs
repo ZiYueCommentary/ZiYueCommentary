@@ -56,11 +56,16 @@
             this.MenuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuHelpManual = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuHelpAbout = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.ToolStripContainerMain.ContentPanel.SuspendLayout();
             this.ToolStripContainerMain.SuspendLayout();
+            this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.StatusStrip.SuspendLayout();
             this.MenuStrip.SuspendLayout();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ToolStripContainerMain
@@ -81,6 +86,10 @@
             // 
             resources.ApplyResources(this.splitContainer1, "splitContainer1");
             this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.tabControl1);
             // 
             // StatusStrip
             // 
@@ -261,6 +270,26 @@
             resources.ApplyResources(this.MenuHelpAbout, "MenuHelpAbout");
             this.MenuHelpAbout.Click += new System.EventHandler(this.EventMenuHelpAboutClick);
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            resources.ApplyResources(this.tabControl1, "tabControl1");
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            // 
+            // tabPage1
+            // 
+            resources.ApplyResources(this.tabPage1, "tabPage1");
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            resources.ApplyResources(this.tabPage2, "tabPage2");
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
             // Window
             // 
             resources.ApplyResources(this, "$this");
@@ -275,11 +304,13 @@
             this.ToolStripContainerMain.ContentPanel.ResumeLayout(false);
             this.ToolStripContainerMain.ResumeLayout(false);
             this.ToolStripContainerMain.PerformLayout();
+            this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.ResumeLayout(false);
             this.StatusStrip.ResumeLayout(false);
             this.StatusStrip.PerformLayout();
             this.MenuStrip.ResumeLayout(false);
             this.MenuStrip.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -314,5 +345,8 @@
         private System.Windows.Forms.ToolStripContainer ToolStripContainerMain;
         private System.Windows.Forms.ToolStripMenuItem MenuToolsInformationTemplate;
         private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
     }
 }
