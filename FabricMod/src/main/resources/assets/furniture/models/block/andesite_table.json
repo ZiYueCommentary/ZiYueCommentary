@@ -1,0 +1,9 @@
+{
+	"parent": "furniture:parent/table",
+	"textures": {
+		"top": "block/polished_andesite",
+		"post": "block/andesite",
+		"bottom": "block/polished_andesite",
+		"particle": "block/andesite"
+	}
+}

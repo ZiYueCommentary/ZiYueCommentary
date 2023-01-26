@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "table",
+  "pattern": [
+    "xxx",
+    " y ",
+    " y "
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:polished_granite"
+    },
+    "y": {
+      "item": "minecraft:granite"
+    }
+  },
+  "result": {
+    "item": "furniture:granite_table",
+    "count": 6
+  }
+}

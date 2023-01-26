@@ -1,0 +1,9 @@
+{
+	"parent": "furniture:parent/table",
+	"textures": {
+		"top": "block/cobblestone",
+		"post": "block/cobblestone",
+		"bottom": "block/stone",
+		"particle": "block/cobblestone"
+	}
+}

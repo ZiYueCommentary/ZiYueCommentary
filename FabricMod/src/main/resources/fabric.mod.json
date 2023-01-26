@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "furniture",
+  "version": "${version}",
+
+  "name": "ZiYue Furniture",
+  "description": "A furniture for fabric",
+  "authors": [
+    "ZiYueCommentary"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "",
+  "icon": "assets/furniture/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.ziyue.furniture.Furniture"
+    ]
+  },
+  "mixins": [
+    "furniture.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

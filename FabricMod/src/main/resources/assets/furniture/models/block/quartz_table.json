@@ -1,0 +1,9 @@
+{
+	"parent": "furniture:parent/table",
+	"textures": {
+		"top": "block/quartz_block_top",
+		"post": "block/quartz_block_side",
+		"bottom": "block/quartz_block_bottom",
+		"particle": "block/quartz_block_top"
+	}
+}

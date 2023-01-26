@@ -1,0 +1,9 @@
+{
+	"parent": "furniture:parent/table",
+	"textures": {
+		"top": "block/spruce_log",
+		"post": "block/spruce_planks",
+		"bottom": "block/stripped_spruce_log",
+		"particle": "block/spruce_log"
+	}
+}

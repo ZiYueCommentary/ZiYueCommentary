@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "chair",
+  "pattern": [
+    "x  ",
+    "xxx",
+    "y y"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:oak_planks"
+    },
+    "y": {
+      "item": "minecraft:oak_log"
+    }
+  },
+  "result": {
+    "item": "furniture:oak_chair",
+    "count": 6
+  }
+}

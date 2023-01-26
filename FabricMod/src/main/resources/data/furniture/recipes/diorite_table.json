@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "table",
+  "pattern": [
+    "xxx",
+    " y ",
+    " y "
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:polished_diorite"
+    },
+    "y": {
+      "item": "minecraft:diorite"
+    }
+  },
+  "result": {
+    "item": "furniture:diorite_table",
+    "count": 6
+  }
+}

@@ -1,0 +1,9 @@
+{
+	"parent": "furniture:parent/table",
+	"textures": {
+		"top": "block/polished_granite",
+		"post": "block/granite",
+		"bottom": "block/polished_granite",
+		"particle": "block/granite"
+	}
+}

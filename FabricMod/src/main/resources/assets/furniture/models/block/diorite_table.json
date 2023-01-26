@@ -1,0 +1,9 @@
+{
+	"parent": "furniture:parent/table",
+	"textures": {
+		"top": "block/polished_diorite",
+		"post": "block/diorite",
+		"bottom": "block/polished_diorite",
+		"particle": "block/diorite"
+	}
+}

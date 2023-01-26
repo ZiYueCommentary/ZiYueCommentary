@@ -1,0 +1,9 @@
+{
+	"parent": "furniture:parent/table",
+	"textures": {
+		"top": "block/acacia_log",
+		"post": "block/acacia_planks",
+		"bottom": "block/stripped_acacia_log",
+		"particle": "block/acacia_log"
+	}
+}

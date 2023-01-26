@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "table",
+  "pattern": [
+    "xxx",
+    " y ",
+    " y "
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:smooth_sandstone"
+    },
+    "y": {
+      "item": "minecraft:sandstone"
+    }
+  },
+  "result": {
+    "item": "furniture:sandstone_table",
+    "count": 6
+  }
+}

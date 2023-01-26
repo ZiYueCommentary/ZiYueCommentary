@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "table",
+  "pattern": [
+    "xxx",
+    " y ",
+    " y "
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:polished_andesite"
+    },
+    "y": {
+      "item": "minecraft:andesite"
+    }
+  },
+  "result": {
+    "item": "furniture:andesite_table",
+    "count": 6
+  }
+}

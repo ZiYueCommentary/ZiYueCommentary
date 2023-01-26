@@ -1,0 +1,9 @@
+{
+	"parent": "furniture:parent/chair",
+	"textures": {
+		"bottom": "block/oak_planks",
+		"side": "block/oak_log",
+		"legs": "block/stripped_oak_log",
+		"particle": "block/oak_log"
+	}
+}

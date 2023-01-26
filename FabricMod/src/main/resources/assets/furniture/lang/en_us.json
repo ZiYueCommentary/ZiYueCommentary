@@ -1,0 +1,22 @@
+{
+  "itemGroup.furniture.itemgroup": "ZiYue Furniture",
+
+  "block.furniture.oak_table": "Oak Table",
+  "block.furniture.spruce_table": "Spruce Table",
+  "block.furniture.birch_table": "Birch Table",
+  "block.furniture.jungle_table": "Jungle Table",
+  "block.furniture.acacia_table": "Acacia Table",
+  "block.furniture.dark_oak_table": "Dark Oak Table",
+  "block.furniture.crimson_table": "Crimson Table",
+  "block.furniture.warped_table": "Warped Table",
+  "block.furniture.cobblestone_table": "Cobblestone Table",
+  "block.furniture.stone_table": "Stone Table",
+  "block.furniture.granite_table": "Granite Table",
+  "block.furniture.diorite_table": "Diorite Table",
+  "block.furniture.andesite_table": "Andesite Table",
+  "block.furniture.quartz_table": "Quartz Table",
+  "block.furniture.sandstone_table": "Sandstone Table",
+  "block.furniture.netherite_table": "Netherite Table",
+
+  "block.furniture.oak_chair": "Oak Chair"
+}

@@ -1,0 +1,9 @@
+{
+	"parent": "furniture:parent/table",
+	"textures": {
+		"top": "block/oak_log",
+		"post": "block/oak_planks",
+		"bottom": "block/stripped_oak_log",
+		"particle": "block/oak_log"
+	}
+}

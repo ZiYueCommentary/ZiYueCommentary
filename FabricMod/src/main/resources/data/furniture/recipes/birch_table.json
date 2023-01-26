@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "table",
+  "pattern": [
+    "xxx",
+    " y ",
+    " y "
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:birch_log"
+    },
+    "y": {
+      "item": "minecraft:birch_planks"
+    }
+  },
+  "result": {
+    "item": "furniture:birch_table",
+    "count": 6
+  }
+}

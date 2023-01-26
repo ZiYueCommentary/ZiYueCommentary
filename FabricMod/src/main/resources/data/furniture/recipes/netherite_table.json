@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "table",
+  "pattern": [
+    "xxx",
+    " x ",
+    " x "
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:netherite_block"
+    }
+  },
+  "result": {
+    "item": "furniture:netherite_table",
+    "count": 6
+  }
+}

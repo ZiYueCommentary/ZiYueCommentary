@@ -1,0 +1,9 @@
+{
+	"parent": "furniture:parent/table",
+	"textures": {
+		"top": "block/warped_stem",
+		"post": "block/warped_planks",
+		"bottom": "block/stripped_warped_stem",
+		"particle": "block/warped_stem"
+	}
+}

@@ -1,0 +1,22 @@
+{
+  "itemGroup.furniture.itemgroup": "子悦家具",
+
+  "block.furniture.oak_table": "橡木桌子",
+  "block.furniture.spruce_table": "云杉木桌子",
+  "block.furniture.birch_table": "白桦木桌子",
+  "block.furniture.jungle_table": "丛林木桌子",
+  "block.furniture.acacia_table": "金合欢木桌子",
+  "block.furniture.dark_oak_table": "深色橡木桌子",
+  "block.furniture.crimson_table": "绯红菌桌子",
+  "block.furniture.warped_table": "诡异菌桌子",
+  "block.furniture.cobblestone_table": "圆石桌子",
+  "block.furniture.stone_table": "石桌子",
+  "block.furniture.granite_table": "花岗岩桌子",
+  "block.furniture.diorite_table": "闪长岩桌子",
+  "block.furniture.andesite_table": "安山岩桌子",
+  "block.furniture.quartz_table": "石英桌子",
+  "block.furniture.sandstone_table": "砂岩桌子",
+  "block.furniture.netherite_table": "下界合金桌子",
+
+  "block.furniture.oak_chair": "橡木椅子"
+}
