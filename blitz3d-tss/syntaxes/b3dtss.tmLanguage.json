@@ -1,0 +1,32 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Blitz3D TSS",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.b3dtss",
+				"match": "\\b(Dim|Goto|Gosub|Return|Exit|If|Then|Else|EndIf|End If|ElseIf|Else If|While|Wend|For|To|Step|Next|Function|End Function|Type|End Type|Each|Local|Global|Field|Const|Select|Case|Default|End Select|Repeat|Until|Forever|Data|Read|Restore|Abs|Sgn|Mod|Pi|True|False|Int|Interger|Float|Str|Include|New|Delete|First|Last|Insert|Before|After|Object|Handle|And|Or|Lor|Xor|Not|Shl|Shr|Sar|Null|Infinity|PowTwo|Switch|End Switch|Array)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.b3dtss",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.b3dtss",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.b3dtss"
+}

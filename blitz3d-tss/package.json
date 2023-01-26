@@ -1,0 +1,25 @@
+{
+    "name": "blitz3d-tss",
+    "displayName": "Blitz3D TSS",
+    "description": "Syntax highlighting for Blitz3D TSS(ZiYueCommentary)",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.67.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "b3dtss",
+            "aliases": ["Blitz3D TSS", "b3dtss"],
+            "extensions": [".bb"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "b3dtss",
+            "scopeName": "source.b3dtss",
+            "path": "./syntaxes/b3dtss.tmLanguage.json"
+        }]
+    }
+}
