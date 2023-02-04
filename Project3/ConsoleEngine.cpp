@@ -3,24 +3,24 @@ using namespace std;
 
 namespace ConsoleEngine {
 	typedef unsigned int uint;
-	constexpr uint SIZE = 50; // Í¼²ã´óĞ¡
+	constexpr uint SIZE = 50; // å›¾å±‚å¤§å°
 
 	__interface IRenderable;
 	class Layer;
 	class RenderSystem;
 
 	/*
-	* Ò»¸ö½Ó¿Ú£¬¿ÉäÖÈ¾µÄÄÚÈİ±ØĞë¼Ì³Ğ´Ë½Ó¿Ú
-	* ÕÒ²»µ½__interface¹Ø¼ü×ÖÖ±½ÓÌæ»»³Éclass¾ÍĞĞ
+	* ä¸€ä¸ªæ¥å£ï¼Œå¯æ¸²æŸ“çš„å†…å®¹å¿…é¡»ç»§æ‰¿æ­¤æ¥å£
+	* æ‰¾ä¸åˆ°__interfaceå…³é”®å­—ç›´æ¥æ›¿æ¢æˆclasså°±è¡Œ
 	*/
 	__interface IRenderable
 	{
 	public:
-		Layer* join(Layer* layer); // ½«×Ô¼ºÌí¼Óµ½Ò»¸öÍ¼²ã
+		Layer* join(Layer* layer); // å°†è‡ªå·±æ·»åŠ åˆ°ä¸€ä¸ªå›¾å±‚
 	};
 
 	/*
-	* Í¼²ãÀà£¬ÔÊĞí¶à¸ö¿ÉäÖÈ¾¶ÔÏóµş¼Ó
+	* å›¾å±‚ç±»ï¼Œå…è®¸å¤šä¸ªå¯æ¸²æŸ“å¯¹è±¡å åŠ 
 	*/
 	class Layer : public IRenderable {
 	public:
@@ -31,7 +31,7 @@ namespace ConsoleEngine {
 			this->name = name;
 		}
 
-		~Layer() { // »ØÊÕÍ¼²ãÊı×é
+		~Layer() { // å›æ”¶å›¾å±‚æ•°ç»„
 			for (uint i = 0; i < SIZE; i++)
 			{
 				delete[] layer[i];
@@ -39,7 +39,7 @@ namespace ConsoleEngine {
 			delete[] layer;
 		}
 
-		Layer* join(Layer* layer) { // ºÏ²¢Á½¸öÍ¼²ã
+		Layer* join(Layer* layer) { // åˆå¹¶ä¸¤ä¸ªå›¾å±‚
 			for (uint i = 0; i < SIZE; i++) {
 				for (uint j = 0; j < SIZE; j++) {
 					if (this->layer[i][j] == ' ') continue;
@@ -51,7 +51,7 @@ namespace ConsoleEngine {
 	};
 
 	/*
-	* äÖÈ¾ÏµÍ³£¬ÓÃÓÚäÖÈ¾Í¼²ã
+	* æ¸²æŸ“ç³»ç»Ÿï¼Œç”¨äºæ¸²æŸ“å›¾å±‚
 	*/
 	class RenderSystem {
 	private:
@@ -66,7 +66,7 @@ namespace ConsoleEngine {
 			return debug;
 		}
 
-		void render(Layer* layer) { // äÖÈ¾Í¼²ã£¬Í¬Ò»Ê±¼äÖ»ÄÜäÖÈ¾Ò»¸ö
+		void render(Layer* layer) { // æ¸²æŸ“å›¾å±‚ï¼ŒåŒä¸€æ—¶é—´åªèƒ½æ¸²æŸ“ä¸€ä¸ª
 			current = layer;
 			clock_t begin, end;
 			begin = clock();
@@ -78,7 +78,7 @@ namespace ConsoleEngine {
 				printf("\n");
 			}
 			end = clock();
-			if (debug) std::cout << layer->name << "Í¼²ãäÖÈ¾Íê±Ï£¬ºÄÊ±" << double(end - begin) / CLOCKS_PER_SEC * 1000 << "ºÁÃë¡£";
+			if (debug) std::cout << layer->name << "å›¾å±‚æ¸²æŸ“å®Œæ¯•ï¼Œè€—æ—¶" << double(end - begin) / CLOCKS_PER_SEC * 1000 << "æ¯«ç§’ã€‚";
 		}
 
 		void flush() {
@@ -86,7 +86,7 @@ namespace ConsoleEngine {
 			render(current);
 		}
 
-		void filter(const std::string& color) { // ÂË¾µ
+		void filter(const std::string& color) { // æ»¤é•œ
 			system(("color "s + color).c_str());
 		}
 	};
@@ -139,4 +139,15 @@ namespace ConsoleEngine {
 			return layer;
 		}
 	};
+}
+
+class Foo {
+public:
+ explicit Foo(double a) {
+
+	}
+};
+
+int main() {
+	Foo foo =1.15;
 }
