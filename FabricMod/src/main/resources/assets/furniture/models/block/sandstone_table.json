@@ -1,9 +1,0 @@
-{
-	"parent": "furniture:parent/table",
-	"textures": {
-		"top": "block/sandstone_top",
-		"post": "block/sandstone_bottom",
-		"bottom": "block/sandstone",
-		"particle": "block/sandstone_top"
-	}
-}

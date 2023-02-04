@@ -1,9 +1,0 @@
-{
-	"parent": "furniture:parent/table",
-	"textures": {
-		"top": "block/birch_log",
-		"post": "block/birch_planks",
-		"bottom": "block/stripped_birch_log",
-		"particle": "block/birch_log"
-	}
-}

@@ -1,9 +1,0 @@
-{
-	"parent": "furniture:parent/table",
-	"textures": {
-		"top": "block/netherite_block",
-		"post": "block/netherite_block",
-		"bottom": "block/netherite_block",
-		"particle": "block/netherite_block"
-	}
-}

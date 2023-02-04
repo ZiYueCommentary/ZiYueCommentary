@@ -1,9 +1,0 @@
-{
-	"parent": "furniture:parent/table",
-	"textures": {
-		"top": "block/jungle_log",
-		"post": "block/jungle_planks",
-		"bottom": "block/stripped_jungle_log",
-		"particle": "block/jungle_log"
-	}
-}
