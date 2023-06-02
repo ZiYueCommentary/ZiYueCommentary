@@ -22,7 +22,7 @@ body:
       label: 先决条件
       description: 以下是提交 Issue 的先决条件。
       options:
-      - label: [常见问题解决方案](https://scpcbgame.cn/help.html)中未提及或方案无效。
+      - label: 常见问题解决方案 中未提及或方案无效。
         required: true
       - label: 这是 bug 而不是特性。
         required: true
