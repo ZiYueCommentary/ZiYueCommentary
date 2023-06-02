@@ -33,7 +33,7 @@ body:
     attributes:
       label: 描述 Bug
       description: 描述一下这个 bug，包括何时、何地、出现前发生了什么。
-      validations:
+    validations:
         required: true
   - type: textarea
     id: information
@@ -45,12 +45,12 @@ body:
         - 处理器：
         - 内存：
         - 游戏路径：
-      validations:
+    validations:
         required: false
   - type: textarea
     id: screenshots
     attributes:
       label: 截图
       description: 这里是有关于 bug 的截图。你可以将崩溃窗口和游戏界面一同截下，然后放在这里。
-      validations:
+    validations:
         required: false
