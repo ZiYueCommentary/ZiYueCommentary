@@ -2,6 +2,8 @@ Hi there, I'm ZiYue, ZiYueCommentary. 👋
 
 I'm a translator who *good at using translators*, I love C++, C#, and Java, ~~though I never learn C#.~~
 
+Are you a developer looking for a website to host your localizations? Check out [ZiYue Weblate](https://weblate.ziyuesinicization.site/) then!
+
 I'm not good at BlitzBasic... 😕
 
 | <a href="https://github.com/anuraghazra/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api?username=ZiYueCommentary&show_icons=true&hide_border=true"/></a> | <a href="https://github.com/anuraghazra/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ZiYueCommentary&layout=compact&hide_border=true" /></a> |
@@ -11,13 +13,9 @@ I'm not good at BlitzBasic... 😕
 
 你好，我是子悦。
 
-搞翻译的，在学C++，~~但是C++太√8难了，Java万岁~~。
+搞翻译的，英语不好，精通各种翻译器的使用。**~~我是语法杀手！~~**
 
-*算是*喜欢SCP，大部分翻译都跟SCP有关。
-
-英语不好，精通各种翻译器的使用。
-
-**~~我是语法杀手！~~**
+需要本地化托管网站吗？欢迎来到[ZiYue Weblate](https://weblate.ziyuesinicization.site/)！
 
 不，我不会写Blitz3D。
 
