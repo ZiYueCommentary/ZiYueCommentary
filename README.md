@@ -2,7 +2,7 @@ Hi there, I'm ZiYue, ZiYueCommentary. 👋
 
 I'm a translator who *good at using translators*, I love C++, C#, and Java, ~~though I never learn C#.~~
 
-Are you a developer looking for a website to host your localizations? Check out [ZiYue Weblate](https://weblate.ziyuesinicization.site/) then!
+Are you a developer looking for a localization management website? Check out [ZiYue Weblate](https://weblate.ziyuesinicization.site/) then!
 
 I'm not good at BlitzBasic... 😕
 
