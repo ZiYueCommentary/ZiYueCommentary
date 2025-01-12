@@ -12,9 +12,13 @@ namespace ZiYue.Ini
     {
         private IniReader() { }
 
-        protected static Dictionary<string, Dictionary<string, Dictionary<string, string>>> bufferMap = new Dictionary<string, Dictionary<string, Dictionary<string, string>>>();
+        protected static Dictionary<string, Dictionary<string, Dictionary<string, string>>> bufferMap =
+            new Dictionary<string, Dictionary<string, Dictionary<string, string>>>();
 
-        public static void WriteBuffer(string path)
+        public static void WriteBuffer(string path, int a = 100)
+        { }
+
+            public static void WriteBuffer(string path)
         {
             try { IniReader.bufferMap.Remove(path); } catch (Exception) { }
             Dictionary<string, Dictionary<string, string>> bufferMap = new Dictionary<string, Dictionary<string, string>>();

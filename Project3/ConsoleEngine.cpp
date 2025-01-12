@@ -27,7 +27,7 @@ namespace ConsoleEngine {
 		std::string name;
 		char layer[SIZE][SIZE]{ ' ' };
 
-		Layer(std::string name = "Unnamed") {
+		explicit Layer(std::string name = "Unnamed") {
 			this->name = name;
 		}
 
@@ -39,7 +39,7 @@ namespace ConsoleEngine {
 			delete[] layer;
 		}
 
-		Layer* join(Layer* layer) { // 合并两个图层
+		Layer* join(Layer* layer) override { // 合并两个图层
 			for (uint i = 0; i < SIZE; i++) {
 				for (uint j = 0; j < SIZE; j++) {
 					if (this->layer[i][j] == ' ') continue;
@@ -58,11 +58,11 @@ namespace ConsoleEngine {
 		bool debug;
 		Layer* current = nullptr;
 	public:
-		RenderSystem(bool debug = false) {
+		explicit RenderSystem(bool debug = false) {
 			this->debug = debug;
 		}
 
-		bool isDebug() {
+		bool isDebug() const {
 			return debug;
 		}
 
