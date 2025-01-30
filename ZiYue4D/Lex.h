@@ -1,13 +1,9 @@
 #pragma once
 
+// 词法分析器
 #include <vector>
 #include <string>
 #include <fstream>
-// 词法分析器
-
-#pragma once
-
-#include <iostream>
 #include "Token.h"
 
 namespace lex {
@@ -17,7 +13,7 @@ namespace lex {
     static float float_value = -1.0f;
     static std::string string_value = "";
 
-    static int GetToken() {
+    static int get_token() {
         static int last_char = ' ';
         while (isspace(last_char)) last_char = file->get();
         if (last_char == '%') { last_char = file->get(); return TOKEN_TYPE_INT; }
@@ -69,7 +65,7 @@ namespace lex {
             do {
                 last_char = file->get();
             } while (last_char != EOF && last_char != '\n' && last_char != '\r');
-            if (last_char != EOF) return GetToken();
+            if (last_char != EOF) return get_token();
         }
 
         if (last_char == EOF) return TOKEN_EOF;

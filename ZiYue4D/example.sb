@@ -1,7 +1,8 @@
-Function fun%(arg1$, arg2%, arg3#)
-	printf("%s, %s, %s", arg1, arg2, arg3)
+Function fun%(arg1, arg2%, arg3#)
+	printf("%s, %s, %s")
+	arg1 + arg2 * -arg1
 End Function
 
-Native printf(str, ...) ; native!
+Native printd(str) ; native!
 
 fun("1", 2, .3)

@@ -45,9 +45,6 @@ std::ostream& operator<<(std::ostream& stream, BitBool& bitbool) {
 }
 
 int main() {
-    BitBool b;
-    b.write_bool(0, 1);
-    std::cout << b;
-    b.write_bool(0, 0);
-    std::cout << '\n' << b;
+    long a = 1145141919810L;
+    std::cout << a;
 }
