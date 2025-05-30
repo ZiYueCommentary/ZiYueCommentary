@@ -44,7 +44,17 @@ std::ostream& operator<<(std::ostream& stream, BitBool& bitbool) {
     return stream;
 }
 
+template<typename T>
+void func(T&& t) {
+    std::cout << t << "\n";
+}
+
+template<typename T, class... Args>
+void func(T&& t, Args&&... args) {
+    std::cout << t << "\n";
+    func(args...);
+}
+
 int main() {
-    long a = 1145141919810L;
-    std::cout << a;
+    func(123, 456.0, "what");
 }

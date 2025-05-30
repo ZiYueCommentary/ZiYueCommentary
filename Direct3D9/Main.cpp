@@ -1,8 +1,8 @@
 #include <Windows.h>
-#include <d3d9.h>
+#include <d3d.h>
 #include <boost/algorithm/string.hpp>
-#pragma comment(lib, "d3d9.lib")
-IDirect3DDevice9* device;
+#pragma comment(lib, "d3d7.lib")
+IDirect3DDevice7* device;
 
 LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
     switch (msg) {
@@ -36,7 +36,7 @@ int WINAPI WinMain(HINSTANCE hinstance, HINSTANCE, LPSTR, int show) {
     SetWindowPos(hwnd, HWND_TOP, 0, 0, 1020, 720, SWP_SHOWWINDOW);
     ShowWindow(hwnd, show);
     UpdateWindow(hwnd);
-    IDirect3D9* d3d9 = Direct3DCreate9(D3D_SDK_VERSION);
+    IDirect3D7* d3d9 = Direct3DCreate7(D3D_SDK_VERSION);
     D3DPRESENT_PARAMETERS params = {};
     params.BackBufferWidth = 1020;
     params.BackBufferHeight = 720;

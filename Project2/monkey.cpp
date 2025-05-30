@@ -1,6 +1,16 @@
-#include <iostream>
+ï»¿#include <iostream>
 
-int main(int argc, char* argv[]) {
+extern void __cdecl render();
+
+int __cdecl main(int argc, char* argv[]) {
+	for (;;) {
+		clock_t begin = clock();
+		render();
+		clock_t end = clock();
+		std::cout << double(end - begin) / CLOCKS_PER_SEC << "\n";
+	}
+	return 0;
+
 	std::ios::sync_with_stdio(false);
 	std::cin.tie(0);
 	unsigned pos = 0;
@@ -26,5 +36,5 @@ int main(int argc, char* argv[]) {
 		times++;
 	}
 	end = clock();
-	std::cout << std::endl << "Íê±Ï£¬¹²" << times << "´Î£¬Ê±³¤" << double(end - begin) / CLOCKS_PER_SEC * 1000 / 1000 << "Ãë¡£" << std::endl;
+	std::cout << std::endl << "å®Œæ¯•ï¼Œå…±" << times << "æ¬¡ï¼Œæ—¶é•¿" << double(end - begin) / CLOCKS_PER_SEC * 1000 / 1000 << "ç§’ã€‚" << std::endl;
 }
