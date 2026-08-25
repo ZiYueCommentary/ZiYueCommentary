@@ -1,16 +1,9 @@
 #pragma once
 
 #include <memory>
-#include <unordered_map>
 #include "Lex.h"
 
 namespace ast {
-    const std::unordered_map<char, int> binop_priority = {
-        {'<',1},{'>',1},
-        {'+',2 },{'-',2},
-        {'*',3},{'/',3}
-    };
-
     struct Identifier {
         std::string name;
         Token type;
@@ -43,7 +36,7 @@ namespace ast {
 
     class StringExprAST : public ExprAST {
     public:
-        StringExprAST(std::string&& string) : string(std::move(string)) {
+        StringExprAST(std::string&& string) : string(string) {
 
         }
 
@@ -92,12 +85,12 @@ namespace ast {
 
     private:
         std::string func;
-        std::vector<std::unique_ptr<ExprAST>> args
+        std::vector<std::unique_ptr<ExprAST>> args;
     };
 
     class PrototypeAST {
     public:
-        PrototypeAST(std::string&& name, std::vector<Identifier>&& args) : name(std::move(name)), args(std::move(args)) {
+        PrototypeAST(std::string&& name, std::vector<Identifier>&& args) : name(name), args(args) {
             // 构造可能需要 std::move，但是构造需要 std::move 有点不可能
         }
 
@@ -117,7 +110,7 @@ namespace ast {
         std::unique_ptr<ExprAST> body;
     };
 
-    int curr_token;
+    extern int curr_token;
 
     int get_next_token();
     int get_binop_priority();

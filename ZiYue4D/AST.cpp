@@ -1,6 +1,14 @@
 #include "AST.h"
 
 namespace ast {
+    int curr_token = 0;
+
+    const std::unordered_map<char, int> binop_priority = {
+        {'<',1},{'>',1},
+        {'+',2 },{'-',2},
+        {'*',3},{'/',3}
+    };
+
     int get_next_token() {
         curr_token = ::lex::get_token();
         return curr_token;
@@ -43,7 +51,7 @@ namespace ast {
 
     std::unique_ptr<ExprAST> parse_string_expr()
     {
-        std::unique_ptr<ExprAST> expr = std::make_unique<StringExprAST>(::lex::string_value);
+        std::unique_ptr<ExprAST> expr = std::make_unique<StringExprAST>(std::move(::lex::string_value));
         get_next_token();
         return std::move(expr);
     }
@@ -104,7 +112,7 @@ namespace ast {
             throw std::exception("Invalid statement.");
         }
         get_next_token();
-        return std::make_unique<PrototypeAST>(identifier, args);
+        return std::make_unique<PrototypeAST>(std::move(identifier), std::move(args));
     }
 
     std::unique_ptr<ExprAST> parse_expr()

@@ -1,3 +1,4 @@
+/*
 #include<iostream>
 #include<initializer_list>
 
@@ -55,6 +56,18 @@ void func(T&& t, Args&&... args) {
     func(args...);
 }
 
-int main() {
-    func(123, 456.0, "what");
+_NODISCARD inline const char* getCharPtr(const std::string& str) {
+    static std::string temp;
+    temp.clear();
+    temp = str;
+    return temp.c_str();
 }
+
+int ian() {
+    std::string foo = "foo";
+    const char* fooC = getCharPtr(foo);
+    std::string bar = "bar";
+    const char* barC = getCharPtr(bar);
+    std::cout << fooC << "\n" << barC;
+}
+*/

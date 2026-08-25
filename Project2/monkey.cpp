@@ -1,14 +1,22 @@
 ﻿#include <iostream>
+#include "Windows.h"
+#include "wininet.h"
 
+#pragma comment(lib, "wininet.lib")
 extern void __cdecl render();
 
 int __cdecl main(int argc, char* argv[]) {
+	DeleteUrlCacheEntry(L"https://files.ziyuesinicization.site/cbue/languages.json");
+	int i = 0;
+	std::cout << ++i + ++i;
+	return 0;
 	for (;;) {
 		clock_t begin = clock();
 		render();
 		clock_t end = clock();
 		std::cout << double(end - begin) / CLOCKS_PER_SEC << "\n";
 	}
+	const std::string&& str = "daoli";
 	return 0;
 
 	std::ios::sync_with_stdio(false);

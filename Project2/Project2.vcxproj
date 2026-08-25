@@ -139,11 +139,6 @@
     <ClCompile Include="monkey.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Pango\Pango.vcxproj">
-      <Project>{fdb8d83b-c23e-410a-bbf8-e0e4de2c1816}</Project>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
